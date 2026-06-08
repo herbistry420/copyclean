@@ -4,7 +4,8 @@
   "description": "On-demand clean clipboard for Claude Code: copies the latest text or code block from your session to your clipboard, without the terminal's soft-wrap and indentation mangling. Trigger with /copyclean, \"copy that\", or !ccopy.",
   "author": {
     "name": "Fordee",
-    "email": "support@herbistry420.com"
+    "email": "support@herbistry420.com",
+    "url": "https://herbistry420.com"
   },
   "license": "MIT",
   "repository": "https://github.com/herbistry420/copyclean",

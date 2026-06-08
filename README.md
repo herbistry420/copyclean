@@ -77,3 +77,5 @@ No hooks, no network access, no third-party dependencies.
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+Built by Fordee — [herbistry420.com](https://herbistry420.com).
