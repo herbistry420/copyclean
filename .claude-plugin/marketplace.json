@@ -1,0 +1,14 @@
+{
+  "name": "copyclean",
+  "owner": {
+    "name": "Fordee",
+    "email": "support@herbistry420.com"
+  },
+  "plugins": [
+    {
+      "name": "copyclean",
+      "source": "./",
+      "description": "Sticky on/off mode that copies clean, paste-ready text and code straight to the macOS clipboard, so you never copy mangled soft-wrapped output from the terminal again."
+    }
+  ]
+}

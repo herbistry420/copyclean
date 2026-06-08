@@ -1,0 +1,4 @@
+{
+  "description": "CopyClean is on-demand (the /copyclean command). It ships no hooks — hooks fire before the final reply is written to the transcript, which makes auto-copy race-prone and unreliable.",
+  "hooks": {}
+}

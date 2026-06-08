@@ -1,0 +1,10 @@
+{
+  "name": "copyclean",
+  "version": "0.1.0",
+  "description": "Sticky on/off mode that copies clean, paste-ready text and code straight to the macOS clipboard, so you never copy mangled soft-wrapped output from the terminal again.",
+  "author": {
+    "name": "Fordee",
+    "email": "support@herbistry420.com"
+  },
+  "keywords": ["clipboard", "copy", "paste", "formatting", "pbcopy", "productivity"]
+}
