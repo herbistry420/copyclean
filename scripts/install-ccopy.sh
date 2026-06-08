@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 # Installs 'ccopy' (the CopyClean on-demand copier) onto your PATH, so you can run
 # it instantly as `!ccopy` inside Claude Code, or bind it to a global hotkey.
+# Opt-in: you run this yourself. The plugin itself never writes to your PATH.
 #
-# Idempotent: a no-op once 'ccopy' is present and current. The plugin's
-# SessionStart hook runs this with --quiet, so installing the plugin + restarting
-# is all your buddy needs. Safe to run by hand too.
+# Idempotent: a no-op once 'ccopy' is present and current. (--quiet silences output.)
 set -euo pipefail
 
 QUIET=0

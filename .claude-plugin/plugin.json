@@ -1,10 +1,13 @@
 {
   "name": "copyclean",
-  "version": "0.1.0",
-  "description": "Sticky on/off mode that copies clean, paste-ready text and code straight to the macOS clipboard, so you never copy mangled soft-wrapped output from the terminal again.",
+  "version": "1.0.0",
+  "description": "On-demand clean clipboard for Claude Code: copies the latest text or code block from your session to your clipboard, without the terminal's soft-wrap and indentation mangling. Trigger with /copyclean, \"copy that\", or !ccopy.",
   "author": {
     "name": "Fordee",
     "email": "support@herbistry420.com"
   },
+  "license": "MIT",
+  "repository": "https://github.com/herbistry420/copyclean",
+  "homepage": "https://github.com/herbistry420/copyclean",
   "keywords": ["clipboard", "copy", "paste", "formatting", "pbcopy", "productivity"]
 }

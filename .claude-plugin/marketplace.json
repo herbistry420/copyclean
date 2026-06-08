@@ -1,5 +1,6 @@
 {
   "name": "copyclean",
+  "description": "On-demand clean clipboard for Claude Code — copies the latest text or code block from your session to your clipboard, without the terminal's soft-wrap and indentation mangling.",
   "owner": {
     "name": "Fordee",
     "email": "support@herbistry420.com"
@@ -8,7 +9,8 @@
     {
       "name": "copyclean",
       "source": "./",
-      "description": "Sticky on/off mode that copies clean, paste-ready text and code straight to the macOS clipboard, so you never copy mangled soft-wrapped output from the terminal again."
+      "description": "On-demand clean clipboard for Claude Code: copies the latest text or code block from your session to your clipboard, without the terminal's soft-wrap and indentation mangling.",
+      "license": "MIT"
     }
   ]
 }

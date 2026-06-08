@@ -38,9 +38,9 @@ auto-copied the last fenced block. It failed in practice: **the `Stop` hook fire
 before Claude's final reply is written to the transcript** (a timing race), so it
 never saw the block it was meant to copy — the clipboard kept its old contents.
 Triggering the copy on a *later* user turn sidesteps the race entirely, because by
-then the message is fully saved. So there is no flag and no copy hook. (The plugin
-ships exactly one hook — a `SessionStart` setup step that auto-installs the `ccopy`
-helper on PATH so `!ccopy` works after install + restart. It does no copying.)
+then the message is fully saved. So there is no flag and no hooks at all. `!ccopy`
+is an optional helper the user installs themselves (`scripts/install-ccopy.sh`); the
+plugin never writes to the user's PATH.
 
 ## Components
 
@@ -51,8 +51,7 @@ ClaudeCopy/
   commands/copyclean.md             # /copyclean -> runs copy_last.py
   skills/copyclean/SKILL.md         # fence-the-deliverable convention + "copy that"
   scripts/copy_last.py              # find newest transcript, copy last fenced block
-  scripts/install-ccopy.sh          # install `ccopy` on PATH (idempotent, --quiet)
-  hooks/hooks.json                  # one SessionStart setup hook (installs ccopy)
+  scripts/install-ccopy.sh          # optional, user-run: install `ccopy` on PATH
   README.md                         # install, triggers, sharing
   docs/copyclean-design.md          # this file
 ```
