@@ -1,4 +1,17 @@
 {
-  "description": "CopyClean is on-demand (the /copyclean command). It ships no hooks — hooks fire before the final reply is written to the transcript, which makes auto-copy race-prone and unreliable.",
-  "hooks": {}
+  "description": "CopyClean ships ONE hook: a SessionStart setup hook that ensures the 'ccopy' fast-trigger is installed on PATH (idempotent, silent). It deliberately has NO copy/Stop hook — that fires before the reply is written to the transcript, which makes auto-copy race-prone and unreliable.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/install-ccopy.sh\" --quiet",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
 }
