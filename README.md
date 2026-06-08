@@ -74,6 +74,11 @@ already holds the clean version.
 
 No hooks, no network access, no third-party dependencies.
 
+## Privacy
+
+CopyClean collects and transmits nothing. It runs entirely on your machine, makes
+no network calls, and has no telemetry. See [PRIVACY.md](PRIVACY.md).
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
